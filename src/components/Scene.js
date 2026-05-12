@@ -10,10 +10,11 @@ extend({
 
 function Scene() {
   const cubeRef = useRef();
-  const planeRef = useRef();
   const {gl, camera} = useThree()
+  // camera.position.x = 5
 
-  useFrame((_, delta) => {
+  useFrame((state, delta) => {
+    // state.camera.position.x = Math.sin(state.clock.elapsedTime)
     // cubeRef.current.rotation.x += delta;
     // planeRef.current.rotation.y += delta;
   });
@@ -22,11 +23,11 @@ function Scene() {
     <>
      {/* <orbitControls args={[camera, gl.domElement]}/> */}
      <OrbitControls/>
-      <mesh ref={planeRef} position-x={-2}>
-        <planeGeometry args={[2, 2]} />
-        <meshBasicMaterial color="orange" side={THREE.DoubleSide} />
-      </mesh>
-      <mesh ref={cubeRef} position-x={2}>
+      {/* <mesh position-z={-7}>
+        <boxGeometry />
+        <meshBasicMaterial color="purple" />
+      </mesh> */}
+      <mesh>
         <boxGeometry />
         <meshBasicMaterial color="yellow" />
       </mesh>

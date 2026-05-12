@@ -5,6 +5,7 @@ import Scene from "./components/Scene";
 import Custom from "./components/Custom";
 import UseLoader from "./components/UseLoader";
 import Particles from "./components/Particles";
+import ThreeDAnimations from "./components/ThreeDAnimations";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,7 +40,8 @@ root.render(
       {/* <Scene /> */}
       {/* <Custom/> */}
       {/* <UseLoader/> */}
-      <Particles/>
+      {/* <Particles/> */}
+      <ThreeDAnimations/>
     </Canvas>
   </>,
 );

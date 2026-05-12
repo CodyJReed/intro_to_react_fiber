@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import Scene from "./components/Scene";
 import Custom from "./components/Custom";
 import UseLoader from "./components/UseLoader";
+import Particles from "./components/Particles";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,7 +38,8 @@ root.render(
       ]}/> */}
       {/* <Scene /> */}
       {/* <Custom/> */}
-      <UseLoader/>
+      {/* <UseLoader/> */}
+      <Particles/>
     </Canvas>
   </>,
 );

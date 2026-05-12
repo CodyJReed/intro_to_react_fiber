@@ -3,13 +3,14 @@ import "./styles.css";
 import { Canvas } from "@react-three/fiber";
 import Scene from "./components/Scene";
 import Custom from "./components/Custom";
+import UseLoader from "./components/UseLoader";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function createCanvasHandler(state) {
-  console.log("canvas has been created.", state);
-  state.gl.setClearColor("green", 0.34);
-}
+// function createCanvasHandler(state) {
+//   console.log("canvas has been created.", state);
+//   state.gl.setClearColor("green", 0.34);
+// }
 
 root.render(
   <>
@@ -35,7 +36,8 @@ root.render(
         10,10, 0xff0000, "cyan"
       ]}/> */}
       {/* <Scene /> */}
-      <Custom/>
+      {/* <Custom/> */}
+      <UseLoader/>
     </Canvas>
   </>,
 );
